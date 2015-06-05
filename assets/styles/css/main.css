@@ -1,0 +1,20 @@
+/*
+  These are global module variables
+  *******************************/
+.foo {
+  width: 200px;
+}
+.foo:before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.foo--type-a {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  border-radius: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */

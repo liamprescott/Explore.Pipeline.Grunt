@@ -1,0 +1,43 @@
+﻿
+
+/*
+  These are global module variables
+  *******************************/
+
+$value-a: 200px;
+$color-a: rgba(0, 0, 0, 0.3);
+
+
+@mixin myMixin ()
+{
+  width: $value-a;
+  height: $value-a;
+  position:absolute;
+  top:0;
+  left:0;
+
+}
+
+
+
+.foo
+{
+  width: $value-a;
+
+  &:before
+  {
+    background-color:$color-a;
+
+  }
+
+  &--type-a
+  {
+    @include myMixin();
+
+    font-size:3em;
+
+    border-radius: 2em;
+
+  }
+
+}
